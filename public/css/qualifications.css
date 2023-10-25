@@ -1,7 +1,7 @@
-/*Definições gerais de fonts*/
+/*Definições padronizadas de fonts importadas*/
 @import url('https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap');
-/*definições gerais de html, body, nav*/
-/*o padrão é o mesmo em 3 das 4 páginas do site, explico tudo na page 'about'*/
+/*Definições padronizadas de html e body*/
+/*Tudo do padrão header, nav e footer é explicado na página about*/
 html, body {
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@ html, body {
     background-color: #111111;
     color: lightgray;
 }
-/*Mantém o rodapé em baixo*/
+/*mantém o rodapé no final*/
 body > .conteudo-rodape {
     margin-top: auto;
 }
@@ -21,7 +21,7 @@ body > .conteudo-rodape {
     flex-direction: column;
     min-height: 100vh; 
 }
-
+/*definições padronizadas de elementos no header e menu de navegação*/
 #logo {
     position: absolute;
     width: 130px;
@@ -36,7 +36,7 @@ body > .conteudo-rodape {
     content: '';
     position: absolute;
     inset: -10px 140px;
-    background: linear-gradient(315deg, lawngreen, black);
+    background: linear-gradient(315deg, mediumaquamarine, black);
     transition: .5s;
     animation: logo 4s linear infinite;
 }
@@ -74,7 +74,7 @@ body > .conteudo-rodape {
 
 header {
     background-color: black;
-    color: lawngreen; 
+    color: mediumaquamarine; 
 }
 
 nav {
@@ -95,68 +95,32 @@ ul, li {
     background-color: black;
 }
 .titulo-principal:hover {
-    color: lawngreen;
+    color: mediumaquamarine;
     transition: 1s;
 }
-.exp {
-    padding: 1rem 2rem;
-    transition: all 0.3s ease;  
-    transform: scale(0.8)
-}
-/*mesmo padrão das formações na página 'academicQualifications...'*/
-.exp:hover {
-    color: lawngreen;
-    transform: scale(1.0); 
+.form-curso {
+    padding: 1rem 2rem; /*definições padrões de padding nessa sessão*/
+    transition: all 0.3s ease;  /* efeito de transição suavizado */
+    transform: scale(0.8) /*caixas de texto partem desta escala e mudam ao passar o mouse por cima*/
 }
 
-/*Definições de estilos de cards das tecnologias*/
-.cards {
-    display: flex;
-    gap: 20px; 
-    justify-content: center; 
-    padding: 20px;
+.form-curso:hover {
+    color: mediumaquamarine;     
+    transform: scale(1.0); /*efeito que complementa a definição de cima*/
 }
 
-.card {
-    background-color: black;
-    border-radius: 8px; /*arredondando bordas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* setando um efeito sombra */
-    width: 150px; /* Setando largura fixa dos cards */
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: transform 0.3s; /* definindo velocidade do efeito sombra */
-}
-
-.card:hover {
-    transform: translateY(-20px); /* qnd passa o mouse, o card se move um pouco pra cima */
-}
-
-.icone {
-    font-size: 2rem; 
-    margin-bottom: 10px; /* colocando espaço entre icone do card e text */
-}
-
-.nome-card:hover {
-    color: lawngreen;/*qnd passa o mouse no nome, vai pro padrão verde*/
-}
-.ajuste-icone {
-    width: 8rem;/*ajustando apenas o icone do card 'tailwind', que era maior que os outros*/
-}
-
-/*definições de footer padrão. Também explico em outras páginas que usam o mesmo footer*/
+/*definições padronizadas de footer de 3 das 4 páginas do site*/
+/*Explico bem na página 'about'!*/
 footer {
     background-color: black;
-    color: lightgray;
-    padding: 1rem 2rem;
+    color: lightgray; 
+    padding: 1rem 2rem; 
     }
-
 
 .conteudo-rodape {
     display: flex;
-    justify-content: space-between; 
-    align-items: flex-end; 
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 
@@ -166,7 +130,12 @@ footer {
 }
 
 #redes-sociais a:hover {
-    color: lawngreen;
+    color: mediumaquamarine;
+}
+
+
+#direitos {
+    font-size: 0.9rem;
 }
 
 a, a:link {
@@ -179,24 +148,20 @@ a, a:link {
 a:hover  {
     cursor: pointer;
     background-color: black;
-    color: lawngreen;
+    color: mediumaquamarine;
     transition: 0.3s;
 }
 
 footer div a:hover {
-    border: lawngreen;
+    border: mediumaquamarine;
     border: solid lightgray 1px;
 }
 
 .titulo-rodape {
-    color:lawngreen;
+    color:mediumaquamarine;
     text-align: center;
 }
 
-#direitos {
-    font-size: 0.9rem;
-}
-/*criando a animação do logo. Explico em outras páginas*/
 @keyframes logo {
     0% {
         transform: rotate(0deg);

@@ -38,7 +38,7 @@ body > .conteudo-rodape {
     content: '';
     position: absolute;
     inset: -10px 140px;
-    background: linear-gradient(315deg, lawngreen, black);
+    background: linear-gradient(315deg, mediumaquamarine, black);
     transition: .5s;
     animation: logo 4s linear infinite;
 }
@@ -76,7 +76,7 @@ body > .conteudo-rodape {
 
 header {
     background-color: black;
-    color: lawngreen; 
+    color: mediumaquamarine; 
 }
 
 nav {
@@ -91,6 +91,55 @@ ul, li {
 }
 
 /* Definições sessões e texto principal da pág*/
+#carrossel {
+    overflow: hidden;
+    width: 100%; 
+    margin: 0 auto;
+    background-color: black;
+  }
+  
+.embalagem-carrossel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+.slide {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.slide img {
+    width: 100%; 
+    max-width: 400px;
+    display: block;
+    max-height: 600px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-radius: 5%;
+    transition: box-shadow 0.3s ease; /*chamando efeito de borda ao passar o mouse*/ 
+    
+  }
+
+.slide img:hover, .botao:hover {
+    box-shadow: 0px 4px 15px mediumaquamarine; /*definindo efeito de borda ao passar o mouse. p botao e img*/
+}
+
+#botoes {
+    display: flex;
+    justify-content: center;
+    align-itens: center;
+    padding-bottom: 20px;
+    background-color: black;
+}
+.botao {
+    background-color: black;
+    color: mediumaquamarine;
+    border-radius: 20%;
+    transition: box-shadow 0.5s ease; /*chamando efeixo q tbm adc na img acima*/
+}
+
 
 .titulo-principal, .sessoes {
     margin: 0;
@@ -99,7 +148,7 @@ ul, li {
     background-color: black;
 }
 .titulo-principal:hover {
-    color: lawngreen;
+    color: mediumaquamarine;
     transition: 1s;
 }
 
@@ -141,7 +190,7 @@ p{
     
 }
 .textos-cards:hover {
-    color: lawngreen;
+    color: mediumaquamarine;
 }
 
 .img {
@@ -193,7 +242,7 @@ footer {
 }
 
 #redes-sociais a:hover {
-    color: lawngreen;
+    color: mediumaquamarine;
 }
 
 a, a:link {
@@ -206,17 +255,17 @@ a, a:link {
 a:hover  {
     cursor: pointer;
     background-color: black;
-    color: lawngreen;
+    color: mediumaquamarine;
     transition: 0.3s;
 }
 
 footer div a:hover {
-    border: lawngreen;
+    border: mediumaquamarine;
     border: solid lightgray 1px;
 }
 
 .titulo-rodape {
-    color:lawngreen;
+    color:mediumaquamarine;
     text-align: center;
 }
 

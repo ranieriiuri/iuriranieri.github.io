@@ -33,7 +33,7 @@ html, body {
     content: '';
     position: absolute;
     inset: -10px 140px; /*usando shrthand pra setar conf de top right bootem e left do efeito */
-    background: linear-gradient(315deg, lawngreen, black); /*Definindo cor gradiente do efeito*/
+    background: linear-gradient(315deg, mediumaquamarine, black); /*Definindo cor gradiente do efeito*/
     transition: .5s; /*duração da transição*/
     animation: logo 4s linear infinite; /*chamando animação criada*/
 }
@@ -74,7 +74,7 @@ html, body {
 
 header {
     background-color: black;
-    color: lawngreen; 
+    color: mediumaquamarine; 
 }
 /*definições titulo e efeito usado*/
 #titulo-principal {
@@ -188,8 +188,8 @@ form button {
 }
 
 button:hover {
-    color: lawngreen;
-    border: solid 1px lawngreen;
+    color: mediumaquamarine;
+    border: solid 1px mediumaquamarine;
 }
 /*definições e estilo de elementos de redes sociais*/
 #redes-sociais {
@@ -199,7 +199,7 @@ button:hover {
 }
 
 .titulo-rodape {
-    color:lawngreen;
+    color:mediumaquamarine;
 }
 
 a, a:link {
@@ -212,12 +212,12 @@ a, a:link {
 a:hover  {
     cursor: pointer;
     background-color: black;
-    color: lawngreen;
+    color: mediumaquamarine;
     transition: 0.3s; /*velocidade da tranasição*/
 }
 
 footer div a:hover {
-    border: lawngreen;
+    border: mediumaquamarine;
     border: solid lightgray 1px;
 }
 

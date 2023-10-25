@@ -62,12 +62,13 @@
         
         <form action="mailto:iuriranierioliveira@gmail.com" method="post">
             <h3 class="titulo-rodape">Entre em contato comigo</h3>
-            <label for="">Nome</label>
-            <input type="text" class="entrada-form" placeholder="Seu nome..." required>
-            <label for="">Email</label>
-            <input type="email" name="email" class="entrada-form" placeholder="seuemail@example..." required>
-            <br><label for="">Comentários</label>
-            <textarea name="Comentários" cols="30" rows="7" placeholder="Contate o profissional, faça um comentário, mande uma sugestão..." required></textarea>
+            <label for="name">Nome</label>
+            <input type="text" name="name" class="entrada-form" placeholder="Seu nome..." autocomplete="on">
+            <label for="email">Email</label>
+            <input type="email" name="email" class="entrada-form" placeholder="seuemail@example..." autocomplete="on">
+            <br>
+            <label for="comments">Comentários</label>
+            <textarea name="comments" cols="30" rows="7" placeholder="Contate o profissional, faça um comentário, mande uma sugestão..." autocomplete="on"></textarea>
             <button id="botao" type="submit">Enviar</button>
         </form>
         
